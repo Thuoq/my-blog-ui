@@ -1,0 +1,66 @@
+.main{
+	display: flex;
+	justify-content: space-between; 
+	@media screen and(min-width: 112.5em) {
+		 justify-content: space-around; 
+	}
+	&__content{ 
+		padding-left: 2rem; 
+		q {
+			color: white;
+		    font-size: 2.5rem;
+		    line-height: 2;
+		    font-style: italic;
+		    animation: moveInBottom 2s ease-in;  
+		    transition: 0.2s all ease-in-out;
+		    cursor: pointer;
+
+			    &:hover{
+			    	color: #FFA902;
+			    }
+			}
+		span{
+		    	display: block;
+		    	text-align: right;
+		    	font-size: 2.5rem;
+		    	font-weight: 700;
+    			color: #cccccc;
+		    }
+		div{
+			display: flex;
+			align-items: center;
+			svg{
+				fill: #FFA902;
+				height: 4.5rem;
+				width: 4rem;
+				cursor: pointer; 
+				transition: all 0.2 ease; 
+				&:hover{
+					fill:white;
+				}
+			}
+
+		}
+
+	}
+	&__video{
+		img{
+			height: 30rem;
+			width: 55rem;
+
+			@media screen and(min-width: 112.5em) {
+				height: 30rem;
+				width: 55rem;
+			}
+			@media screen and(max-width: 75em) {
+				 height: 25rem;
+				 width: 45rem;
+			}
+			@media screen and(max-width: 56.25em) {
+			      height: 20rem;
+				 width: 35rem;
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,42 @@
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10rem;
+
+	&__brand,&__brand:link,&__brand:active{
+		display: inline-block;
+		padding: 2rem;   
+		text-decoration: none; 
+		color: white;  
+		font-size: 4.5rem;  
+		letter-spacing: 2rem; 
+		transition: all .2s ease-in-out;
+		&:hover{
+			color : #FFA902;
+		}
+		
+	}
+	&__nav{
+		display: flex;
+		justify-content: space-between; 
+		backface-visibility: hidden; 
+		align-items: center;
+		li{
+			list-style: none; 
+			padding:  0 2rem 1rem 0;
+			a{   
+  				font-size: 2.5rem;     
+  				text-decoration: none;
+  				color: white;  
+  				transition: all .2s ease-in-out;    
+  				&:hover{
+					border-bottom: 5px solid #FFA902;    
+				}
+			}	 
+		}
+		li:not(:last-child){
+				margin-right: 2rem;   
+		}
+	}
+}
