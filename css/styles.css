@@ -187,12 +187,30 @@ body {
     font-size: 1.6rem;
     color: #FFA902;
     font-family: sans-serif; }
+  .btn--signin {
+    padding: 2rem 4rem;
+    border-radius: 3px;
+    color: #FFA902;
+    margin-top: 3rem;
+    background-color: #3D3D3D;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+    .btn--signin:hover {
+      background-color: transparent;
+      color: white;
+      letter-spacing: 3px;
+      font-weight: 600; }
+  .btn--signWithGoogle {
+    background-color: #8E8E8F;
+    padding: 2rem 2.5rem; }
 
 .btn-labels {
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  display: inline-block; }
   .btn-labels, .btn-labels:link, .btn-labels:active {
     text-decoration: none;
-    display: inline-block;
     border: 1px solid #7e878e;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -503,3 +521,41 @@ body {
           font-style: italic; }
         .main-resume .container-resume .education-resume .education__details span {
           font-weight: 700; }
+
+.signin {
+  display: flex;
+  justify-content: space-around; }
+  .signin > div {
+    padding: 2rem; }
+  .signin > div h2 {
+    font-size: 3.2rem;
+    color: white;
+    font-weight: 400;
+    transition: 0.2s all ease-in-out;
+    padding-left: 1.5rem; }
+    .signin > div h2:hover {
+      color: #FFA902;
+      cursor: pointer; }
+  .signin > div form div {
+    display: flex;
+    justify-content: space-between; }
+  .signin > div form input {
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid #ccc;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    font-family: inherit;
+    display: block;
+    outline: none;
+    color: #ccc;
+    transition: all .3s; }
+    .signin > div form input:focus:invalid {
+      border-bottom: 3px solid #FFA902; }
+    .signin > div form input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid cornflowerblue; }
+    .signin > div form input::-webkit-input-placeholder {
+      color: white; }

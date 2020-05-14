@@ -21,9 +21,31 @@
 		color: #FFA902;
 		font-family: sans-serif;
 	}
+	&--signin{
+		padding: 2rem 4rem;
+		border-radius: 3px;
+		color: #FFA902;
+		margin-top: 3rem;
+		background-color:#3D3D3D; 
+		border:none;
+		font-size: 1.6rem;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			background-color: transparent;
+			color: white;
+			letter-spacing: 3px;
+			font-weight: 600;
+		}
+	}
+	&--signWithGoogle{
+		background-color: #8E8E8F;
+		padding: 2rem 2.5rem;
+	}
 }
 .btn-labels{
 	transition: all 0.2s ease-in-out;
+	display: inline-block;
 	&,&:link,&:active{
 		text-decoration: none;
 	

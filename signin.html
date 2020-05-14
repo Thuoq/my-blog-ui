@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>COWNUT</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,600,700,900&display=swap" rel="stylesheet">
+		<link rel="icon" href="./img/favicon-96x96.png" type="image/png">
+	</head>
+	<body>
+		<nav class="navbar mb-sm">
+			<a href="#" class="navbar__brand">COWNUT</a>
+			<ul class="navbar__nav">
+				<li class="navbar__list"><a href="./overview.html" target="_blank" class="navbar__item">
+					Blog
+				</a></li>
+				<li class="navbar__list"><a href="./resume.html" class="navbar__item" target="_blank">
+					My Resume
+				</a></li>
+				<li class="navbar__list"><a href="./signin.html" class="navbar__item">
+					Login
+				</a></li>
+			</ul>
+		</nav>
+		<section class="signin">
+			<div class="d-left">
+				<h2 class="mb-md">Do You Have Account ?</h2>
+				<form action="#" >
+					<input class ="d-left__input" placeholder="Your Email:" id="emailsignin1" type="email"  /> <br>
+					<input id="passwordsignin1" type="password"  placeholder="Your Password:" /> <br>
+					<div>
+						<button type="submit" class="btn btn--signin">Sign In</button>
+						<button type="submit" class="btn btn--signin btn--signWithGoogle">Sign In With Google</button>
+					</div>
+				</form>
+			</div>
+			<div class="d-right">
+				<h2 class="mb-md">Do You Not Have Account ? </h2>
+				<form action="" class="d-right__form">
+					
+					<input type="email" id="emailsignup1" placeholder="Your email" /> <br>
+					
+					<input type="text" id="displaynamesignup1" placeholder="Display name"><br>
+					
+					<input type="password" id="passwordsignup1" placeholder="Your password"> <br>
+	
+					<input type="password" id="passwordsignup2" placeholder="Confirm Password"> <br>
+					<button type="submit" class="btn btn--signin ">Sign Up</button>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
