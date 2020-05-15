@@ -24,52 +24,105 @@
 			</ul>
         </nav>
         <h1 class="heading-primary">Hoisting In Javascript</h1>
-        <section class="header">
-			<div class="main-content" style="line-height: 1.9; color: ghostwhite ; word-spacing: 5px " >
+        <section class="header" style="font-size: 1.6rem">
+			<div class="main-content" style="line-height: 2; color: ghostwhite ; word-spacing: 5px " >
                 <h2>Chắc hẳn nhiều bạn đã nghe thuật ngữ này rồi đúng không ? 🤔🤔🤔 Nó thường hay có trong những phỏng vấn
-                    interview về JavaScript. Mình mong rằng với những vấn đề mình nói dưới đây sẽ làm cho các bạn <span>“Fully
+                    interview về JavaScript. Mình mong rằng với những vấn đề mình nói dưới đây sẽ làm cho các bạn <span style="color: #FFA902;">“Fully
                     understand”</span> về HOSTING nha. Let’s go 🏃‍♀️🏃‍♀️🏃‍♀️🏃‍♂️
                 </h2>
-                <p>Trước tiên, khi JavaScript chạy nó sẽ có 2️⃣ pharse: </p>
-                <ul>
-                    <li>
-                        Pharse 1️⃣: <b>Creation Pharse </b>
-                        <ul>
-                            <li>Nó tạo từ khóa <b> THIS </b> và <b> Global Object và 2 cái này = windows</b></li>
-                            <li>Tiếp theo nó sẽ tạo ra HOISTING</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Pharse 2️⃣: <b>Execution Pharse</b>
-                        <ul>
-                            <li>Run our code</li>
-                        </ul>
-                    </li>
-                </ul>
-                <article>
+                <div class="hoisting__header">
+	                <p><b style="font-size: 2rem;">Trước tiên</b>, khi JavaScript chạy nó sẽ có 2️⃣ Pharse: </p>
+	                <ul style="margin-left: 5rem">
+	                    <li>Pharse 1️⃣: <b>Creation Pharse </b>
+	                        <ul style="list-style: none">
+	                            <li>Nó tạo từ khóa <b style="color: #FFA902;"> THIS </b> và <b style="color: #FFA902;"> Global Object và 2 cái này = windows</b></li>
+	                            <li>Tiếp theo nó sẽ tạo ra <b style="color: #FFA902;">HOISTING</b></li>
+	                        </ul>
+	                    </li>
+	                    <li>
+	                        Pharse 2️⃣: <b >Execution Pharse</b>
+	                        <ul style="list-style: none">
+	                            <li>Run our code</li>
+	                        </ul>
+	                    </li>
+	                </ul>
+                </div>
+                <article  class="mb-md">
                     <h2>Định nghĩa: </h2>
-                    <p> Hoisting là 1 hành động  di chuyển của các biến <b>(variable)</b> hoặc <b>function
-                        declarations</b> lên đầu của environments xuyên suốt quá trình compile. Variable là 1 phần <b>(partially)</b> của
-                        hoisting and function declarations là <b>hoisting</b>
+                    <p style="margin-left: 5rem"> Hoisting là 1 hành động  di chuyển của các biến <b><span style="color: #FFA902;">(variable)</span></b> hoặc <span style="color: #FFA902;"><b>function
+                        declarations</b> </span>lên đầu của environments xuyên suốt quá trình compile. Variable là 1 phần <b><span style="color: #FFA902;">(partially)</span></b> của
+                        hoisting and function declarations là <span style="color: #FFA902;"><b>hoisting</b></span>
                     </p>
-                </article>     
-                <picture>
-                    <h2>Nghe có rất khó hiểu đúng không nào 🤯🤯🤯🤯 Để mình viết code cho các bạn bằng code nha.</h2>
-                    <img src="" alt="PICTURE 1">
-                    <p>Ở trên, dòng  mình khai báo <b>variable mySong là 1 string: "giang"</b></p>
-                    <p>Ở trên, dòng  mình khai báo 1 <b>function declaration có tên là sing</b></p>
-                    <p>Và khi các bạn run code này với các ngôn ngữ như C , C++ thì nó sẽ báo 1 lỗi ở dòng vì nó  chưa được định nghĩa. Nhưng với JavaScript thì nó là 1 ra như thế này:</p>
-                </picture>      
-                <picture>
-                    <img src="" alt="PICTURE 2 ">
-                    <article>
-                        <h2>Câu hỏi đặt ra là tại sao lại là như thế này 🤔🤔🤔</h2>
-                        
-                        <b></b>
-                    </article>   
-                </picture>       
+                </article> 
+                <article class="mb-md">
+	                <picture >
+	                    <h2>Nghe có vẻ rất khó hiểu đúng không nào 🤯🤯🤯🤯 Để mình giải thích cho các bạn bằng code nha.</h2>
+	                    <img src="https://i.postimg.cc/ydFXS9yg/pic1a.jpg"  style="width: 100%;"  alt="PICTURE 1">
+	                    <p>Ở trên,  dòng 5  mình khai báo <b style="color: #FFA902;">variable mySong là 1 string: "giang"</b></p>
+	                    <p>Ở trên, dòng 9 mình khai báo 1 <b style="color: #FFA902;">function declaration có tên là sing</b></p>
+	                    <p>Và khi các bạn run code này với các ngôn ngữ như C , C++ thì nó sẽ báo 1 lỗi ở dòng vì nó  chưa được định nghĩa. Nhưng với JavaScript thì nó là 1 ra như thế này:</p>
+	                </picture>      
+                </article>
+                <article class="mb-md">
+	                <picture >
+	                    <img src="https://i.postimg.cc/857TnP9H/pic4.jpg" style="width: 100%;" alt="PICTURE 2 ">
+	                    <article class="mb-md">
+	                        <h2>Câu hỏi đặt ra là tại sao lại là như thế này 🤔🤔🤔</h2>
+	                        <b>Chính là vì JS engine chỉ định các bộ nhớ cho variables và function declarations xuyên suốtParse 1, trước khi nó sang Parse 2 <span style="color: #FFA902;"> (execute)  </span> nó . ➡ Đó là HOISTING  </b>
+	                    </article>  
+	                    <b class="mb-md">Vậy câu hỏi đặt ra tiếp theo là thằng JS engine nó làm gì ở bên sâu trong nó  (underneath thehood) xuyên suốt Parse 1. <span style="color: #FFA902;"> ( Creation Phares)</span> . JS engine sẽ nhìn qua code của chúng ta và ngay sau khi nó nhìn keyword (VAR and FUNCTION ) và  nó “Ohh” nào hãy chỉ định memory bởi vì có keyword VAR and FUNCTION  ➡ Nó cần memory và nó đặt variables mySong là undefined như mình mô tả ở dưới:</b>
+		            	<img src="https://i.postimg.cc/cHGPSxbZ/pic5.jpg" class="mb-md" style="width: 100%;"> 
+		            	<b style="color: #FFA902;">Đó là lý do tại sao mình lại nói VARIABLE là 1 phần của hosting vì nó chỉ set undefined  không phải là set value thẳng luôn . </b>
+	                </picture>  
+	               	<picture class="mb-md">
+	               		<b>Với thằng function nó sẽ làm là nó sẽ chuyển thằng function mình đã khai báo lên trên thằng mình execute nó như hình dưới : </b>
+	               		<img src="https://i.postimg.cc/Y2PYqdHn/pic6.jpg" style="width: 100%;">
+	               		<b style="color: #FFA902;">Đó là lý do tại sao mình lại nói Function declartions are hoisted. Bất cứ khi nào mình gọi 
+	               		"execute" sing JS biết cái sing đó đang ở trong memory nào và sẽ return nó ra.</b> <br>
+	               	</picture>
+                </article>  
+                <article  class="mb-md">
+	               	<picture  class="mb-md">
+	               		<b>Làm 1 bài nhỏ các bạn đoán nhé . Bạn nghĩ sao về trường hợp này </b>
+	               		<img src="https://i.postimg.cc/FRGWRzXQ/pic7.jpg" style="width: 100%;">
+	               		<b  style="color: #FFA902;">Như mình đã nói ở trên JS engine nó nhìn keyword VAR và Function thì nó sẽ hoisted. Nhưng khi JS nó nhìn tới dòng 6 nó nhìn là () ➡ nó k hoisted và nếu mình Run thì nó sẽ báo lỗi sing not define. ➡ Thêm nữa nhé : Nếu bạn đã học let , const rồi ES6 syntax thì nó cũng báo err luôn nha 💖💯</b><br><br>
+	               	</picture>
+	               	<picture class="mb-md"> 
+	               		<b>Thêm 1 ví dụ cho các bạn thực hành nha <3 . Bạn nghĩ sao khi mình call nó callName();</b>
+	               		<img src="https://i.postimg.cc/mDGJhkXd/pic8.jpg" style="width: 100%">
+	               	</picture>
+             
+               	</article>
+               	<article class="mb-lg">
+               		<picture>
+               			<h2>Kết quả: </h2>
+               			<img src="https://i.postimg.cc/852RTfZ5/pic9.png" style="width: 100%">
+               			<b > Bạn có đoán ra được không ?. Câu trả lời là có thì chúc mừng bạn bạn đã <span style="color: #FFA902;">"Fully Understand HOISTING"</span> 💖💯 🤞🎈🎉🎉✨</b>
+               			<p> Còn nếu chưa ? that perfectly fine: <b style="color: #FFA902;"> " More you practice more you got it " </b>. Nào cùng mình giải thích nha: </p><br>
+               			<b style="color: #FFA902;">Bạn nhớ TWO Pharse mình nói ở trên không ? khi mà hoisting trong function nó sẽ tạo ra two pharse đó lần nữa ➡ thì ở dòng thứ 4 nó sẽ ra undefined vì JS engine nó đã nhìn thấy VAR myName trong function callName➡ suy ra undefined còn ở dưới thì quá rõ rồi nha 💖💯. </b><br><br>
+               			<b> Mình xin dừng bài viết tại đây. Minh tin chắc rằng bạn đọc thêm lần nữa sẽ master vấn đề HOISTING này. Nếu bạn thấy bài viết mình còn chỗ nào thiếu sót thì đừng ngại comment để mình sửa lỗi cho những lần sau nha Nếu bạn là newbie thì cứ comment vấn đề thuật ngữ  thì cứ comment mình sẽ giải đáp thắc mắc nha. Xin chào và hẹn gặp lại các bạn trong những bài viết sau nha.</b>
+               		</picture>
+               	</article>
+               	<div class="footer__item">
+		             <div class="footer__item--comment">
+		             	<form>
+			             	<label>Comment: </label>
+		               		<textarea type="text" name="comment" placeholder="comment ..."></textarea>
+			             	<button type="submit" class="btn btn--signin"> Comment Now</button>
+		             	</form>
+		             </div>
+		             <div class="footer__item--display">
+		             	<div class="footer__item--user">
+			             	<h3 >Name: Jhon</h3>
+			             	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			             	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			             	</p>
+		             		
+		             	</div>
+		             </div>
+               	</div>
 			</div>
-			<div class="sidebar">
+			<div class="sidebar" id="sidebar">
 				<div class="popular-post">
 					<div class="popular-post--icon mb-md">
 						<svg >
@@ -118,4 +171,16 @@
 			</div>
 		</section>
     </body>
+    <script type="text/javascript">
+    	window.onscroll = function() {scrollFunction()};
+    	function scrollFunction() {
+    		if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    			document.getElementById('sidebar').style.gridRow = "2/4";
+    		}else if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+    			document.getElementById('sidebar').style.gridRow = "3/4";
+    		} else{
+    			document.getElementById('sidebar').style.gridRow = "1/3"
+    		}
+    	}
+    </script>
 </html>
