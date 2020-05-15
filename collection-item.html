@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>COWNUT</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,600,700,900&display=swap" rel="stylesheet">
+		<link rel="icon" href="./img/favicon-96x96.png" type="image/png">
+    </head>
+    <body>
+        <nav class="navbar mb-sm">
+			<a href="#" class="navbar__brand">COWNUT</a>
+			<ul class="navbar__nav">
+				<li class="navbar__list"><a href="#" class="navbar__item">
+					Blog 
+				</a></li>
+				<li class="navbar__list"><a href="./resume.html" class="navbar__item">
+					My Resume
+				</a></li>
+				<li class="navbar__list"><a href="#" class="navbar__item">
+					Login
+				</a></li>
+			</ul>
+        </nav>
+        <h1 class="heading-primary">Hoisting In Javascript</h1>
+        <section class="header">
+			<div class="main-content" style="line-height: 1.9; color: ghostwhite ; word-spacing: 5px " >
+                <h2>Chắc hẳn nhiều bạn đã nghe thuật ngữ này rồi đúng không ? 🤔🤔🤔 Nó thường hay có trong những phỏng vấn
+                    interview về JavaScript. Mình mong rằng với những vấn đề mình nói dưới đây sẽ làm cho các bạn <span>“Fully
+                    understand”</span> về HOSTING nha. Let’s go 🏃‍♀️🏃‍♀️🏃‍♀️🏃‍♂️
+                </h2>
+                <p>Trước tiên, khi JavaScript chạy nó sẽ có 2️⃣ pharse: </p>
+                <ul>
+                    <li>
+                        Pharse 1️⃣: <b>Creation Pharse </b>
+                        <ul>
+                            <li>Nó tạo từ khóa <b> THIS </b> và <b> Global Object và 2 cái này = windows</b></li>
+                            <li>Tiếp theo nó sẽ tạo ra HOISTING</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Pharse 2️⃣: <b>Execution Pharse</b>
+                        <ul>
+                            <li>Run our code</li>
+                        </ul>
+                    </li>
+                </ul>
+                <article>
+                    <h2>Định nghĩa: </h2>
+                    <p> Hoisting là 1 hành động  di chuyển của các biến <b>(variable)</b> hoặc <b>function
+                        declarations</b> lên đầu của environments xuyên suốt quá trình compile. Variable là 1 phần <b>(partially)</b> của
+                        hoisting and function declarations là <b>hoisting</b>
+                    </p>
+                </article>     
+                <picture>
+                    <h2>Nghe có rất khó hiểu đúng không nào 🤯🤯🤯🤯 Để mình viết code cho các bạn bằng code nha.</h2>
+                    <img src="" alt="PICTURE 1">
+                    <p>Ở trên, dòng  mình khai báo <b>variable mySong là 1 string: "giang"</b></p>
+                    <p>Ở trên, dòng  mình khai báo 1 <b>function declaration có tên là sing</b></p>
+                    <p>Và khi các bạn run code này với các ngôn ngữ như C , C++ thì nó sẽ báo 1 lỗi ở dòng vì nó  chưa được định nghĩa. Nhưng với JavaScript thì nó là 1 ra như thế này:</p>
+                </picture>      
+                <picture>
+                    <img src="" alt="PICTURE 2 ">
+                    <article>
+                        <h2>Câu hỏi đặt ra là tại sao lại là như thế này 🤔🤔🤔</h2>
+                        
+                        <b></b>
+                    </article>   
+                </picture>       
+			</div>
+			<div class="sidebar">
+				<div class="popular-post">
+					<div class="popular-post--icon mb-md">
+						<svg >
+							<use xlink:href="./img/sprite.svg#heart"></use>
+						</svg>
+						<h3>Popular Posts</h3>
+					</div>
+					<p>Sharing about Programing (JS,HTML,CSS)</p>
+					<p>Add about some framework JavaScript( React, Angular,Vue)</p>
+					<p>Share about my life ( Personally about life)</p>
+				</div>
+				<div class="lables mb-md">
+					<div class="lables--icon mb-sm">
+						<svg>
+							<use xlink:href="./img/sprite.svg#label"></use>
+						</svg>
+						<h3>Lables</h3>
+					</div>
+					<a href="#" class="btn-labels">JavaScript</a>
+					<a href="#" class="btn-labels">CSS</a>
+					<a href="#" class="btn-labels">My Life</a>
+					<a href="#" class="btn-labels">React JS</a>
+					<a href="#" class="btn-labels">Node JS</a>
+					<a href="#" class="btn-labels">Study More Effective</a>
+				</div>
+				<div class="footer">
+					<h3>Contact Me: </h3>
+					<div class="footer--icon">
+						<a href="#">
+							<svg>
+								<use xlink:href="./img/sprite.svg#github"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg>
+								<use xlink:href="./img/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg>
+								<use xlink:href="./img/sprite.svg#google-browser"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+    </body>
+</html>
